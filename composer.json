@@ -1,0 +1,20 @@
+{
+    "name": "geniusts/laravel-hijri-dates",
+    "description": "Hijri dates package for Laravel",
+    "type": "library",
+    "require": {
+        "php": ">=7",
+        "geniusts/hijri-dates": "^1.0",
+        "illuminate/support": "^5.4"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Abdul-Kader Zein-Eddin",
+            "email": "aboudeh1987@gmail.com"
+        }
+    ],
+    "autoload": {
+        "GeniusTS\\LaravelHijri\\": "src/"
+    }
+}
