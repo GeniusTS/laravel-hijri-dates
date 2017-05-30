@@ -4,7 +4,7 @@
     "type": "library",
     "require": {
         "php": ">=7",
-        "geniusts/hijri-dates": "^1.0",
+        "geniusts/hijri-dates": "~1.1.0",
         "illuminate/support": "^5.0"
     },
     "license": "MIT",

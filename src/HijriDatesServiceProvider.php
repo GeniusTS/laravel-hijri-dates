@@ -4,6 +4,7 @@ namespace GeniusTS\LaravelHijri;
 
 
 use GeniusTS\HijriDate\Date;
+use GeniusTS\HijriDate\Hijri;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\ServiceProvider;
 
@@ -34,9 +35,10 @@ class HijriDatesServiceProvider extends ServiceProvider
 
         $translation = Config::get('hijri-dates.translation');
         Date::setTranslation(new $translation);
-        Date::setAdjustment(Config::get('hijri-dates.adjustment'));
         Date::setToStringFormat(Config::get('hijri-dates.toStringFormat'));
         Date::setDefaultNumbers(Config::get('hijri-dates.numeric_system'));
+
+        Hijri::setDefaultAdjustment(Config::get('hijri-dates.adjustment'));
     }
 
     /**
