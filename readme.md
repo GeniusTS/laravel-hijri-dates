@@ -1,4 +1,4 @@
-# Hijri dates for Laravel 5.x
+# Hijri dates for Laravel
 
 ## Installation
 
